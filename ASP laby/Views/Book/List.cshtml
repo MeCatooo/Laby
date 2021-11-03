@@ -32,6 +32,11 @@
             <td>
                 @book.PublishingYear
             </td>
+            <td>
+                <a asp-controller="Book" asp-action="EditForm" asp-route-id="@book.Id">Edytuj</a>
+                <a asp-controller="Book" asp-action="DeleteConfirm" asp-route-id="@book.Id">Usuń</a>
+                <a asp-controller="Book" asp-action="Details" asp-route-id="@book.Id">Szczegóły</a>
+            </td>
         </tr>
         }
     </tbody>
